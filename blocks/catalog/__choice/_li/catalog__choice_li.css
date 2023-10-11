@@ -1,0 +1,31 @@
+.catalog__choice_li {
+    list-style-type: none;
+    color: #000;
+    max-width: 230px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20.5px 52px 24px 28px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.catalog__choice_li:first-child{
+    background-color: #F8F8F8;
+    color:#929292;
+}
+
+.catalog__choice_li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #E9E9E9;
+}

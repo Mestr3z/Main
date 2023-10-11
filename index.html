@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="images/x-icon" href="./images/favicon1.svg">
+    <title>Uniport</title>
+</head>
+
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <div class="header__content">
+                <a href="#" class="header__logo_link">
+                    <img class="header__logo" src="images/logo.svg" alt="логотип компании">
+                    <img class="header__logo_name" src="./images/logo 2.svg" alt="изображение часов">
+                </a>
+                <div class="flexx">
+                <div class="header__menu">
+                    <img class="logos" src="./images/time.svg" alt="изображение часов">
+                    <div class="header__menu_works">
+                        <p class="text">Время работы</p>
+                        <p class="text">Круглосуточно</p>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <img class="logos" src="./images/location.svg" alt="изображение метки локации">
+                    <div class="header__menu_works">
+                        <p class="text">Адрес</p>
+                        <p class="text">Санкт-Петербург</p>
+                    </div>
+                </div>
+                <div class="header__icons">
+                    <div class="header__icons_circle"></div>
+                    <img class="header__icons_img icn" src="./images/message.svg" alt="иконка почты">
+                    <img class="header__icons_img" src="./images/telegram.svg" alt="логотип telegram">
+                    <img class="header__icons_img" src="./images/telephone-call1.png" alt="логотип whatsapp">
+                </div>
+                <div class="header__contacts">
+                    <a href="#" class="header__contacts_number">+# (###) ##-##-##</a>
+                    <a href="#" class="header__contacts_mail">####@########.##</a>
+                </div>
+                <a href="#" class="header__cart">
+                    <img class="header__cart_logo" src="./images/shopping-cart.svg"
+                        alt="изображение продуктовой корзины">
+                    <div class="header__cart_list">
+                        <p class="header__cart_list_name">Корзина</p>
+                        <p class="header__cart_list_items">1<span class="header__cart_list_items_text"> товар</span></p>
+                        <p class="header__cart_list_cost">7 650 <span
+                                class="header__cart_list_cost_currency">руб.</span></p>
+                    </div>
+                </a>
+                <div class="header__burger" onclick="toggleMenu()">
+                    <div class="header__bar bar"></div>
+                    <div class="header__bar bar"></div>
+                    <div class="header__bar bar"></div>
+                </div>
+            </div>
+        </header>
+            <section class="menu">
+                <div class="menu__list">
+                    <div class="menu__item">
+                        <p class="menu__text menu__first-list">ПРОДУКЦИЯ <img class="menu__down" src="./images/down.png"
+                                alt="иконка развертывания списка"> </p>
+                        <ul class="submenu submenu__first-list">
+                            <li class="submenu__li">Газобетон D-300</li>
+                            <li class="submenu__li">Газобетон D-400</li>
+                            <li class="submenu__li">Газобетон D-500</li>
+                            <li class="submenu__li">Газобетон D-600</li>
+                            <li class="submenu__li">Газобетон D-700</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="menu__link">КАЛЬКУЛЯТОР</a>
+                    <a href="#" class="menu__link">ЦЕНЫ</a>
+                    <a href="#" class="menu__link">ДОСТАВКА И ОПЛАТА</a>
+                    <a href="#" class="menu__link">БЛОГ</a>
+                    <div class="menu__item">
+                        <p class="menu__text menu__second-list">О КОМПАНИИ <img class="menu__down"
+                                src="./images/down.png" alt="иконка развертывания списка"></p>
+                        <ul class="submenu submenu__second-list">
+                            <li class="submenu__li">О производстве</li>
+                            <li class="submenu__li">Реквизиты</li>
+                            <li class="submenu__li">Партнеры</li>
+                            <li class="submenu__li">Документы</li>
+                            <li class="submenu__li">Вакансии</li>
+                            <li class="submenu__li">Сотрудничество</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="menu__link">ЧАСТЫЕ ВОПРОСЫ</a>
+                    <a href="#" class="menu__link">КОНТАКТЫ</a>
+                    <button class="menu__button" id="menuButton">ЗАКАЗАТЬ ЗВОНОК</button>
+                </div>
+            </section>
+            <main class="mainpage">
+                <section class="head">
+                    <div class="head__block">
+                        <h1 class="head__block_title">Качественный Газобетон от производителя</h1>
+                        <p class="head__block_price">от 6 874 руб/м3</p>
+                        <p class="head__block_info">Газобетон заводского качества по отличной цене!</p>
+                        <p class="head__block_info">Быстрая доставка со склада производителя!</p>
+                        <p class="head__block_info">Оплата на месте разгрузки!</p>
+                        <button type="button" class="head__block_button">Перейти в каталог <img
+                                class="head__block_button-img" src="./images/r-a.svg" alt="стрелка вправо"
+                                fill="white"></button>
+                    </div>
+                    <div class='head__offer'>
+                        <p class="head__offer_title">Оставьте телефон и получите уникальное предложение</p>
+                        <form class="querstion__remaining-questions_form" action="#" method="post" name="clientform"
+                            id="form">
+                            <p class="question__remaining-questions_label"> Как к вам обращаться?</p>
+                            <input type="text" class="question__remaining-questions_input" value=""
+                                onkeypress="noDigits(event)" placeholder="Введите Ваше имя">
+                            <p class="question__remaining-questions_label"> Ваш номер телефона *</p>
+                            <input type="tel" class="question__remaining-questions_input telephone tele" value="" id="tel"
+                                placeholder="+7 (___) ___-__-__" required>
+                            <p class="form__p">Отправляя данные, Вы соглашаетесь с</p>
+                            <a href="#" class="form__link">
+                                <p class="form__p p">Правилами обработки персональных данных</p>
+                            </a>
+                            <button type="submit" class="querstion__remaining-questions_button" disabled>ОТПРАВИТЬ</button>
+                        </form>
+                    </div>
+                </section>
+                <section class="gazoblock">
+                    <div class="gazoblock__titles">
+                        <h2 class="gazoblock__titles_title">Наша продукция</h2>
+                        <div class="container">
+                            <a class="gazoblock__titles_link" href="#">
+                                <p class="gazoblock__titles_go">Перейти в каталог </p>
+                                <img class="gazoblock__titles_go-img" src="./images/right-arrow.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gazoblock__grid">
+                        <div class="gazoblock__blocks">
+                            <img class="gazoblock__block_item-img" src="./images/block.png">
+                            <div class="gazoblock__blocks_descrip">
+                                <p class="gazoblock__blocks_descrip-text1">Газобетон D-300</p>
+                                <p class="gazoblock__blocks_descrip-text2">Самый теплый из автоклавных газобетонов.
+                                    Класс прочности В2,0.</p>
+                                <div class="container">
+                                    <a class="gazoblock__titles_link" href="#">
+                                        <p class="gazoblock__titles_go text">Подробнее</p>
+                                        <img class="gazoblock__titles_go-img" src="./images/right-arrow.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gazoblock__blocks">
+                            <img class="gazoblock__block_item-img" src="./images/block.png">
+                            <div class="gazoblock__blocks_descrip">
+                                <p class="gazoblock__blocks_descrip-text1">Газобетон D-400</p>
+                                <p class="gazoblock__blocks_descrip-text2">Самый теплый из автоклавных газобетонов.
+                                    Класс прочности В2,0.</p>
+                                <div class="container">
+                                    <a class="gazoblock__titles_link" href="#">
+                                        <p class="gazoblock__titles_go text">Подробнее</p>
+                                        <img class="gazoblock__titles_go-img" src="./images/right-arrow.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gazoblock__blocks">
+                            <img class="gazoblock__block_item-img" src="./images/block.png">
+                            <div class="gazoblock__blocks_descrip">
+                                <p class="gazoblock__blocks_descrip-text1">Газобетон D-500</p>
+                                <p class="gazoblock__blocks_descrip-text2">Самый теплый из автоклавных газобетонов.
+                                    Класс прочности В2,0.</p>
+                                <div class="container">
+                                    <a class="gazoblock__titles_link" href="#">
+                                        <p class="gazoblock__titles_go text">Подробнее</p>
+                                        <img class="gazoblock__titles_go-img" src="./images/right-arrow.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gazoblock__blocks">
+                            <img class="gazoblock__block_item-img" src="./images/block.png">
+                            <div class="gazoblock__blocks_descrip">
+                                <p class="gazoblock__blocks_descrip-text1">Газобетон D-600</p>
+                                <p class="gazoblock__blocks_descrip-text2">Самый теплый из автоклавных газобетонов.
+                                    Класс прочности В2,0.</p>
+                                <div class="container">
+                                    <a class="gazoblock__titles_link" href="#">
+                                        <p class="gazoblock__titles_go text">Подробнее</p>
+                                        <img class="gazoblock__titles_go-img" src="./images/right-arrow.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gazoblock__blocks">
+                            <img class="gazoblock__block_item-img" src="./images/block.png">
+                            <div class="gazoblock__blocks_descrip">
+                                <p class="gazoblock__blocks_descrip-text1">Газобетон D-700</p>
+                                <p class="gazoblock__blocks_descrip-text2">Самый теплый из автоклавных газобетонов.
+                                    Класс прочности В2,0.</p>
+                                <div class="container">
+                                    <a class="gazoblock__titles_link" href="#">
+                                        <p class="gazoblock__titles_go text">Подробнее</p>
+                                        <img class="gazoblock__titles_go-img" src="./images/right-arrow.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gazoblock__blocks">
+                            <img class="gazoblock__block_item-img" src="./images/block.png">
+                            <div class="gazoblock__blocks_descrip">
+                                <p class="gazoblock__blocks_descrip-text1">Некондиция, бой</p>
+                                <p class="gazoblock__blocks_descrip-text2">Самый теплый из автоклавных газобетонов.
+                                    Класс прочности В2,0.</p>
+                                <div class="container">
+                                    <a class="gazoblock__titles_link" href="#">
+                                        <p class="gazoblock__titles_go text">Подробнее</p>
+                                        <img class="gazoblock__titles_go-img" src="./images/right-arrow.svg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                    <section class="advantages">
+                        <div class="advantages__unite">
+                        <h2 class="advantages__title">Преимущества работы с нами</h2>
+                        <div class="slider-buttons">
+                        <button class="buttonLeft" id="slideLeft"></button>
+                        <button class="buttonRight" id="slideRight"></button>
+                    </div>
+                    </div>
+                        <div class="advantages__flex">
+                            <div class="advantages__block">
+                                <img class="advantages__block_img" src="./images/russia.png">
+                                <p class="advantages__block_text">Доставим в любую точку РФ</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img class="advantages__block_img2" src="./images/date.png">
+                                <p class="advantages__block_text2">Срок доставки от 1 дня</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img class="advantages__block_img" src="./images/truck.png">
+                                <p class="advantages__block_text">Свой автопарк техники</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img class="advantages__block_img2" src="./images/24-hours.png">
+                                <p class="advantages__block_text2">Работаем без выходных</p>
+                            </div>
+                            <div class="advantages__block">
+                                <img class="advantages__block_img2" src="./images/qr.png">
+                                <p class="advantages__block_text2">Сохрани наши контакты</p>
+                            </div>
+                        </div>
+                        
+                    </section>
+                <section class="blog">
+                    <div class="gazoblock__titles">
+                        <h2 class="gazoblock__titles_title">Последние записи блога</h2>
+                        <div class="container">
+                            <a class="gazoblock__titles_link" href="#">
+                                <p class="gazoblock__titles_go">Перейти в блог </p>
+                                <img class="gazoblock__titles_go-img" src="./images/right-arrow.svg" alt="стрелка вправо">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog__grid">
+                        <div class="blog__card">
+                            <a href="#" class="gazoblock__link">
+                            <img class="blog__card_image" src="./images/hands.png" alt="фотографии руки с инструментом">
+                        </a>
+                            <div class="blog__card_container">
+                                <a href="#" class="gazoblock__link">
+                                <p class="blog__card_container_text1">Как правильно обрабатывать газобетонные блоки</p>
+                            </a>
+                                <p class="blog__card_container_text2">Популярный способ защиты наружной поверхности
+                                    газобетона – оштукатуривание. Толстый слой...</p>
+                            </div>
+                            <div class="card__blog_date-container">
+                                <p class="card__blog_date-container_number">02</p>
+                                <p class="card__blog_date-container-month">Августа, 2023</p>
+                      </div>
+                      </div>
+                      <div class="blog__card">
+                        <a href="#" class="gazoblock__link">
+                        <img class="blog__card_image" src="./images/hands.png" alt="фотографии руки с инструментом">
+                    </a>
+                        <div class="blog__card_container">
+                            <a href="#" class="gazoblock__link">
+                            <p class="blog__card_container_text1">Как правильно обрабатывать газобетонные блоки</p>
+                        </a>
+                            <p class="blog__card_container_text2">Популярный способ защиты наружной поверхности
+                                газобетона – оштукатуривание. Толстый слой...</p>
+                        </div>
+                        <div class="card__blog_date-container">
+                            <p class="card__blog_date-container_number">02</p>
+                            <p class="card__blog_date-container-month">Августа, 2023</p>
+                  </div>
+                  </div>
+                  <div class="blog__card">
+                    <a href="#" class="gazoblock__link">
+                    <img class="blog__card_image" src="./images/hands.png" alt="фотографии руки с инструментом">
+                </a>
+                    <div class="blog__card_container">
+                        <a href="#" class="gazoblock__link">
+                        <p class="blog__card_container_text1">Как правильно обрабатывать газобетонные блоки</p>
+                    </a>
+                        <p class="blog__card_container_text2">Популярный способ защиты наружной поверхности
+                            газобетона – оштукатуривание. Толстый слой...</p>
+                    </div>
+                    <div class="card__blog_date-container">
+                        <p class="card__blog_date-container_number">02</p>
+                        <p class="card__blog_date-container-month">Августа, 2023</p>
+              </div>
+              </div>
+              <div class="blog__card">
+                <a href="#" class="gazoblock__link">
+                <img class="blog__card_image" src="./images/hands.png" alt="фотографии руки с инструментом">
+            </a>
+                <div class="blog__card_container">
+                    <a href="#" class="gazoblock__link">
+                    <p class="blog__card_container_text1">Как правильно обрабатывать газобетонные блоки</p>
+                </a>
+                    <p class="blog__card_container_text2">Популярный способ защиты наружной поверхности
+                        газобетона – оштукатуривание. Толстый слой...</p>
+                </div>
+                <div class="card__blog_date-container">
+                    <p class="card__blog_date-container_number">02</p>
+                    <p class="card__blog_date-container-month">Августа, 2023</p>
+          </div>
+          </div>
+                    </div>
+                </section>
+                <section class="questions">
+                    <h2 class="questions__title">Остались вопросы?</h2>
+                    <div class="questions__card">
+                        <p class="questions__card_title">Оставьте свой номер, мы перезвоним и подробно на них ответим.
+                            Или позвоните нам: <a href="#" class="questions__card_number">+# (###) ###-##-##</a></p>
+                                <form class="querstion__remaining-questions_form second__form" action="#" method="post" name="clientform" id="form">
+                                    <div class="form__container second__container">
+                                        <p class="question__remaining-questions_label"> Как к вам обращаться?</p>
+                                        <input type="text" class="question__remaining-questions_input name second__name" value="" placeholder="Введите Ваше имя">
+                                    </div>
+                                    <div class="form__container">
+                                        <p class="question__remaining-questions_label"> Ваш номер телефона</p>
+                                        <input type="tel" class="question__remaining-questions_input telephone__input telephone" value="" id="tel2" minlength="10" placeholder="+7 (___) ___-__-__" required>
+                                    </div>
+                                    <button type="submit" class="second__button" id="submitButton2" disabled>ОТПРАВИТЬ</button>
+                                </form>
+                                <p class="form__p second_p">Отправляя данные, Вы соглашаетесь с <a href="#" class="form__link" >Правилами обработки персональных данных </a>         
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <section class="info">
+                    <div class="column__product">
+                        <h3 class="column__header">Продукция <img class="footer__down"
+                            src="./images/down.png" alt="иконка развертывания списка"></h3>
+                        <ul class="column__products">
+                                <li class="column__products_list"><a href="#" class="footer__link">Газобетон D-300</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Газобетон D-300</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Газобетон D-300</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Газобетон D-300</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Газобетон D-300</a></li>
+                        </ul>
+                    </div>
+                    <div class="column__about">
+                        <h3 class="column__header">О компании <img class="footer__down"
+                            src="./images/down.png" alt="иконка развертывания списка"></h3>
+                        <ul class="column__products">
+                                <li class="column__products_list"><a href="#" class="footer__link">О производстве</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Реквизиты</a></li>   
+                                <li class="column__products_list"><a href="#" class="footer__link">Партнеры</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Документы</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Вакансии</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Сотрудничество</a></li>
+                        </ul>
+                    </div>
+                    <div class="column__info">
+                        <h3 class="column__header">Полезная информация <img class="footer__down"
+                            src="./images/down.png" alt="иконка развертывания списка"></h3>
+                        <ul class="column__products">
+                                <li class="column__products_list"><a href="#" class="footer__link">Калькулятор</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Цены</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Доставка и оплата</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Блог</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Новости</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Частые вопросы</a></li>
+                                <li class="column__products_list"><a href="#" class="footer__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="column__company">
+                        <a href="#" class="column__company_logos">
+                            <img src="./images/logo.svg" alt="логотип компании" class="column__company_image">
+                            <img src="./images/logo 2.svg" alt="название компании"
+                                class="column__company_secondimage footer-image2">
+                        </a>
+                        <div class="column__company_contacts">
+                            <div class="column__company_contacts-left">
+                                <p class="column__company_text">Телефон:</p>
+                                <p class="column__company_text">Почта:</p>
+                                <p class="column__company_text">Режим:</p>
+                                <p class="column__company_text">Адрес:</p>
+                            </div>
+                            <div class="column__company_contacts-right">
+                                <a href="#" class="column__company_link">+# (###) ###-##-##</a>
+                                <a href="#" class="column__company_link">####@########.##</a>
+                                <p class="column__company_textright">Круглосуточно</p>
+                                <p class="column__company_textright">Санкт-Петербург</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="footer__credits">
+                    <div class="footer__credits_text">
+                        <p class="footer__credits_text-save">© 2023. Все права защищены.</p>
+                        <a href="#" class="footer__credits_text-personaldata">Политика обработки персональных данных</a>
+                    </div>
+                </section>
+            </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>

@@ -1,0 +1,9 @@
+.catalog__link {
+    text-decoration: none;
+    color: #929292;
+    margin: 0;
+}
+
+.catalog__link:visited {
+    color: transparent;
+}

@@ -1,0 +1,6 @@
+.mainpage{
+    max-width: 1203px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
