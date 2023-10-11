@@ -5,4 +5,4 @@
 - HTML
 - CSS
 
-[Link to the project](https://mestr3z.github.io/main/)
+[Link to the project](https://mestr3z.github.io/Main/)
